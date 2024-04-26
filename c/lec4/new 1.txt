@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    unsigned int x,y,z;
+   printf("please enter num1 \n");
+   scanf("%d",&x);
+   printf("please enter num2 \n");
+   scanf("%d",&y);
+   printf("please enter num3 \n");
+   scanf("%d",&z);
+   if(x>y&&x>z)
+   {
+     printf(" num1 is max \n");
+   }
+   else if(y>x&&y>z)
+   {
+       printf(" num2 is max\n");
+
+   }
+   else if(x>z&&x>y)
+   {
+        printf(" num3 is max \n");
+   }
+   else
+     printf(" nums are equal \n");
+    printf("bye\n");
+    return 0;
+}
+/*****************************************************************/*************************
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+     unsigned int x;
+     printf("please enter number \n");
+   scanf("%d",&x);
+   if(x%2==0)
+   {
+        printf("number is even \n");
+   }
+   else
+    {
+         printf("number is odd \n");
+    }
+    printf("bye\n");
+    return 0;
+}
+/*****************************************************************/*************************
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+     unsigned int grade;
+     printf("please enter number of grade \n");
+   scanf("%d",&grade);
+   if(grade<50)
+   {
+      printf("your grade is 'F'\n");
+   }
+   else if(grade>=50&&grade<60)
+   {
+        printf("your grade is 'D'\n");
+   }
+    else if(grade>=60&&grade<70)
+        {
+        printf("your grade is 'c'\n");
+   }
+     else if(grade>=70&&grade<80)
+        {
+        printf("your grade is 'B'\n");
+   }
+   else
+    printf("your grade is 'A'\n");
+    printf("bye\n");
+    return 0;
+}
+/*****************************************************************/*************************
