@@ -1,0 +1,22 @@
+# .gitignore file
+
+*obj
+*bin
+*Debuge
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.cbp
+# Executables
+*.exe
+
+
+# KDE specific
+.directory
+
+# Misc
+.svn
+*.bak
