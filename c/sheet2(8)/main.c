@@ -40,7 +40,7 @@ printf("%d\n",x);
     scanf("%d",&bit);
        y=((x>>bit)&1);
 
-printf("%d",y);
+printf("%d\n",y);
     break;
     }
     }

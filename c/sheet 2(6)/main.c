@@ -3,21 +3,27 @@
 
 int main()
 {
-   int num,y;
-    printf("\n enter your number \n");
+  unsigned char num,y=0,x=0,z=0;
+          printf(" enter your number \n");
     scanf("%d",&num);
    for(int i=7;i>=0;i--)
 {
     y=((num>>i)&1); // read bit
+    printf(" %d",y);
+    if(y==1)
+        x|=(1<<z);
+    else
+        x&=~(1<<z);
+    z=z+1;
 
 }
-
-/*for(int i=0;i<7;i++)
+printf("\n  %d\n",x);
+ for(int i=7;i>=0;i--)
 {
-    y=((num>>i)&1); // read bit10001010/
-printf("%d",y);
+    y=((x>>i)&1);
+     printf(" %d",y);
 }
-num=y;
-printf("%d",num);
+
+
     return 0;
 }
