@@ -5,7 +5,7 @@
     int main() {
   int num;
 
-  printf("Enter a positive integer: ");
+  printf("Enter a positive integer =  ");
   scanf("%d", &num);
   if (num<=0) {
     printf("%d is not a perfect square.\n", num);
