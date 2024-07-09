@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1720556654 source:c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\sheet3(1)\functions.c
+
+1720557307 source:c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\sheet3(1)\main.c
+	<stdio.h>
+	<stdlib.h>
+
