@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1720616197 source:c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\(3) write a c function that return 0 if a given number is a power of 3,\function.c
+
+1720616135 source:c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\(3) write a c function that return 0 if a given number is a power of 3,\main.c
+	<stdio.h>
+	<stdlib.h>
+
