@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include"student.h"
 int number_of_index(int*arr,int size,int num)
 {
     int i,count=0;
@@ -146,7 +147,7 @@ void string_print(char *str)
         printf("%c",str[i]);
 
     }
-    printf("\n");
+    printf(" ");
 
 }
 
@@ -192,8 +193,73 @@ string_print(new_str);
       }
   }
  }
- void reverse_string2(char*str)
+ void swap_string(char*str1,char*str2,int x)
 {
+    int i,y,size=size_of_string(str2);
+    int*temp;
+    for(i=0;i<size;i++,x++)
+    {
+        temp=str1[x];
+     str1[x]=str2[i];
+     str2[i]=temp;
+
+    }string_print(str1);
+
+    str2[i]=0;
+   //str1[i]=0;
+   //  string_print(str2);
+}
+void pointer_print_of_array(char**str,int size)
+{
+    int i;
+    for(i=0;i<size;i++)
+    {
+        string_print(str[i]);
+    }
+}
+    void string_replace(char*Main_string,char*find,char*replace)
+    {
+      char str1[100] = "";
+
+        int x, size=size_of_string(Main_string);
+
+         for(int y=0, i=0;i<size;i++,y++)
+        {
+string_print(Main_string);
+                //printf("%C",Main_string[i]);
+            if(Main_string[i]==' ')
+            {string_print(Main_string);
+                str1[y]=NULL;
+
+               y=-1;
+            //string_print(str1);
+                //printf("%C",Main_string[i]);
+//printf("%d",string_is_mirror_or_not(str1,find));
+string_print(Main_string);
+                if (string_is_mirror_or_not(str1,find)==1)
+                {string_print(Main_string);
+  printf("\n%d  ",i);
+x=i+1-size_of_string(find);
+              swap_string(str1,replace,x);
+string_print(Main_string);
+                }
+                else{
+
+//printf("replace\n");
+
+            }}
+
+            else
+            {
+               str1[y]=Main_string[i];
+               // printf("\n%d  ", y);
+               //
+string_print(Main_string);
+            }
+
+        }
+string_print(Main_string);
+    }
     int clear_bit(int num, int pos) {
     int mask = ~(1 << pos);
     return num & mask;
@@ -209,7 +275,8 @@ int count_ones(unsigned int num) {
     return count;
 }
 
-
+void reverse_array(char*str)
+{
     int i,j=size_of_string(str)-1-1,temp;
     for(i=0;i<size_of_string(str)/2;i++)
     {
@@ -222,9 +289,12 @@ string_print(str);
 }
 int main()
 {int X;
-    char str1[]={" I work as an embedded software engineer for 3 years"};
-     char str2[]={"Ahmed saAlem"};
-reverse_array(str2);
+    char*Main_string[]={"I", "work" ,"as" ,"an" ,"embedded" ,"software", "engineer", "for" ,"3" "years"};
+     char find[]={"worK"};
+char*Main_string2[5]=NULL;
+     //char replace[]={"oop"};
+X=size_of_string(Main_string);
+pointer_print_of_array(Main_string,X);
 
 }
 
