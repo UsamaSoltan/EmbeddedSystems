@@ -38,7 +38,7 @@ void string_print(char *str)
 }
 extern int ID_student;
 void student_printByRef(struct student* ps)
-{printf("grade:%d",ps->ID);
+{printf("ID:%d",ps->ID);
   printf("  name:");
 string_print(ps->name);
 printf("   age:%d",ps->age);fflush(stdin);
@@ -113,8 +113,8 @@ int string_is_mirror_or_not(char*str1,char*str2)
  }
  int string_is_mirror_or_not_for_password(char*str1,char*str2)
  {
-     string_upperToLower(str1);
-     string_upperToLower(str2);
+    // string_upperToLower(str1);
+    // string_upperToLower(str2);
   if(size_of_string(str1)<size_of_string(str2)||size_of_string(str1)>size_of_string(str2))
   {
       return -1;
@@ -140,3 +140,4 @@ int string_is_mirror_or_not(char*str1,char*str2)
     }
     return n;
 }*/
+

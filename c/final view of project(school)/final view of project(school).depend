@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1723952170 source:c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\final view of project(school)\file.c
+	<stdio.h>
+	<stdlib.h>
+
+1723951702 source:c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\final view of project(school)\main.c
+	<stdio.h>
+	<stdlib.h>
+	"File.h"
+
+1723948917 c:\users\samagroup\desktop\online course\deploma\embeddedsystems\c\final view of project(school)\file.h
+

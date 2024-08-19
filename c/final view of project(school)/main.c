@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "file1.h"
+#include "File.h"
 #define MAX_STUDENTS 1000
 #define s school
 #define MAX_ATTEMPTS 2
@@ -17,19 +17,19 @@ int i;
 char x;
 char password[]= {"password123"};
 int num_students ;
-struct student **school;//struct student *school[&s1,&s2,&,&,&]
+struct student **s;//struct student *school[&s1,&s2,&,&,&]
 int main()
 {
     char pass[20];
     int attempts = 0;
-    int is_authenticated = 0;
+    int is_correct = 0;
     do
     {
         printf("Enter password to access the system: ");
         scanf("%s", pass);
         if (string_is_mirror_or_not_for_password(pass,password)==1)
         {
-            is_authenticated = 1;
+            is_correct = 1;
             break;
         }
         else
@@ -43,7 +43,7 @@ int main()
     }
     while (attempts < MAX_ATTEMPTS);
 
-    if (is_authenticated==0)
+    if (is_correct==0)
     {
         printf("error in system\n");
         return 1;
@@ -254,7 +254,7 @@ int main()
                 printf("please enter your name:");
                 string_scan(str);
                 int falg1=0;
-                while(i<num_students)
+                for(i=0;i<num_students;i++)
                 {
                     if(string_is_mirror_or_not((school[i]->name),str)==1)
                     {
@@ -266,10 +266,7 @@ int main()
                         printf("-------------------------------------------------------------------------------");
                         break;
                     }
-                    else
-                    {
-                        i++;
-                    }
+
                 }
                 if( falg1==0)
                 {
@@ -371,7 +368,7 @@ int main()
                 printf("\n");
             }
             printf("Total number of student is : %d",num_students);
-            printf("-------------------------------------------------------------------------------");
+            printf("\n-------------------------------------------------------------------------------");
             break;
         case 6:// exit the system
             return 0;

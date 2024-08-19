@@ -7,3 +7,4 @@ int size_of_string(char*str);
 int string_is_mirror_or_not(char*str1,char*str2);
 int string_is_mirror_or_not_for_password(char*str1,char*str2);
 
+
